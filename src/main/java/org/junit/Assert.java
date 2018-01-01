@@ -959,4 +959,14 @@ public class Assert {
     public static <T> void assertGreaterThan(T o1, T o2, java.util.Comparator<T> comparator) {
         assertTrue(comparator.compare(o1, o2) > 0);
     }
+
+    
+    public static <T> void assertIntGreaterThan(int a, int b) {
+        assertTrue(a > b);
+    }
+    
+    public static <T> void assertCharGreaterThan(char a, char b) {
+        assertTrue(a > b);
+    }
+    
 }

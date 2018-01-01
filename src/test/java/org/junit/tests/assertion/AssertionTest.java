@@ -659,5 +659,9 @@ public class AssertionTest {
     @Test
     public void assertGreaterThan() {
         Assert.assertGreaterThan(new Integer(1000), new Integer(50), new IntegerComparator());
+        assertIntGreaterThan(45, 9);
+        assertCharGreaterThan('e', 'b');
     }
+    
+    
 }
