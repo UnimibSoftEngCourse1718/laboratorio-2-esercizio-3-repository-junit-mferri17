@@ -4,7 +4,9 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertCharGreaterThan;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertIntGreaterThan;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertNull;
@@ -648,4 +650,12 @@ public class AssertionTest {
     public void assertNotEqualsIgnoresFloatDeltaOnNaN() {
         assertNotEquals(Float.NaN, Float.NaN, 1f);
     }
+
+    @Test
+    public void assertGraterThan() {
+        assertIntGreaterThan(45, 9);
+        assertCharGreaterThan('e', 'b');
+    }
+    
+    
 }
