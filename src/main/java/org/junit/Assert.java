@@ -957,6 +957,6 @@ public class Assert {
     }
     
     public static <T> void assertGreaterThan(T o1, T o2, java.util.Comparator<T> comparator) {
-        assertEquals(comparator.compare(o1, o2), 1);
+        assertTrue(comparator.compare(o1, o2) > 0);
     }
 }
